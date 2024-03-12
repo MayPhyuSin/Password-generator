@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <form>
+    <div class="container ">
+      <div class="main_div">
+        <h1 class="h2 mb-5" style="color: rgb(57, 57, 57);">Password Generator</h1>
+        <div class="fillout_session">
+          <div class="form-group row mb-4 ">
+            <label  class="col-form-label ">Enter the length of your password:</label>
+            <div class="col-sm-3 ">
+              <input type="text" class="form-control"  placeholder="8" id="pwLength">
+            </div>
+          </div>
+          
+          <div class="form-check mb-2 ">
+            <input class="form-check-input" type="checkbox" value="" id="lowercase">
+            <label class="form-check-label" for="lowercase">
+              Include lowercase
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" value="" id="uppercase" >
+            <label class="form-check-label" for="uppercase">
+              Include uppercase
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" value="" id="number" >
+            <label class="form-check-label" for="number">
+              Include number
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" value="" id="symbol" >
+            <label class="form-check-label" for="symbol">
+              Include symbol
+            </label>
+          </div>
+          <button id="generateButton" class="btn btn-outline-primary mt-3">Generate</button>
+        </div>
+
+        <div class="result mt-5">
+          <label >Your password:</label>
+          <div class="alert mt-1" id="password"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
